@@ -1,0 +1,19 @@
+# This is workflow to build and deploy angular app on github pages
+name: Build and Deploy on github pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+       - uses: actions/checkout@v3
+       - run: yarn install
+       - run: yarn build:prod
+       - uses: crazy-max/ghaction-github-pages@v3.0.0
+         with:
+           target_branch: gh-pages
+           build_dir: docs
+         env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
