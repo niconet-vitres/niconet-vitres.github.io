@@ -1,0 +1,36 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-menu-panel{
+  background-color: #3F51B5 !important;
+  color: white !important;
+}
+
+@media only screen and (max-width : 480px) {
+  .title {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width : 481px) {
+  .mat-flat-button {
+  padding: 0 ;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 768px) {
+  .title {
+    font-size: 18px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 769px) {
+
+}
+

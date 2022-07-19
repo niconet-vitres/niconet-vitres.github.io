@@ -1,0 +1,13 @@
+<section id="contact" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="space-between center">
+    <form [formGroup]="myForm" fxLayout="column" fxFlex="50%" fxLayoutAlign="space-between stretch" fxFlexOrder.lt-md="2">
+      <mat-form-field appearance="outline">
+        <mat-label>Votre email</mat-label>
+        <input matInput placeholder="Entrez votre email" required [formControl]="userEmail">
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput rows="5" placeholder="Entrez votre message" required [formControl]="userTexte" ></textarea>
+      </mat-form-field>
+      <button mat-flat-button color="primary"[disabled]="myForm.invalid">Envoyer</button>
+    </form>
+  <h2 fxFlex="30" fxFlexOrder.lt-md="1">ME CONTACTER</h2>
+</section>

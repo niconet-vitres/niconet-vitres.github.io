@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h2, h3, h4 {
+  color: #3F51B5;
+}
+h1, h2 {
+  font-weight: bold !important;
+}
+h1 {
+  font-size: 40px;
+  color: black;
+}
+
+@media only screen and (max-width : 480px) {
+  section {
+    padding: 15px 5px;
+  }
+}
+
+@media only screen and (max-width : 481px) {
+  section {
+    padding: 45px 15px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 768px) {
+  section {
+    padding: 60px 20px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 769px) {
+  section {
+    padding: 50px 80px!important;
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  section {
+    padding: 30px 150px!important;
+  }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  section {
+    padding: 30px 200px!important;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  section {
+    padding: 100px 300px!important;
+  }
+}

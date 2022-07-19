@@ -1,0 +1,81 @@
+#introduction {
+  font-size: 20px;
+  background-image: url("../../../assets/pictures/225649.jpg");
+  font-weight: bold;
+  line-height: 40px;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+}
+h1 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+h2 {
+  color: black;
+  font-style: italic;
+  font-weight: normal !important;
+}
+p {
+  text-align: justify;
+  text-justify: auto;
+
+}
+
+
+@media only screen and (max-width : 481px) {
+  #intro-image>img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 769px) {
+  #intro-image>img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 768px) {
+  p {
+    width: 100%;
+  }
+  #intro-image>img {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width : 1024px) {
+  #intro-image>img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  section {
+    height: 400px;
+  }
+  #intro-image>img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  #introduction {
+    height: 600px;
+  }
+  #intro-image>img {
+    width: 400px;
+    height: 400px;
+  }
+}

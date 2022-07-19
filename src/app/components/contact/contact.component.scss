@@ -1,0 +1,35 @@
+#contact {
+  background-color: #BCDDFC;
+}
+input, textarea {
+  width: 100%;
+}
+input {
+  height: 40px;
+}
+
+@media only screen and (max-width : 481px) {
+  section {
+    padding: 45px 15px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 768px) {
+  form {
+    width: 100%;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 769px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  form {
+    width: 100%;
+  }
+}
