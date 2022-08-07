@@ -16,7 +16,7 @@ export class MailsService {
     return this.http.post("https://formspree.io/f/xpznalyy",
         {
           email: userMail,
-          _replyto: 'persan27190@gmail.com',
+          _replyto: 'nicorept76@gmail.com',
           message: message
         },
         {
