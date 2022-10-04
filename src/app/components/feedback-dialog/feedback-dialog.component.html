@@ -1,0 +1,37 @@
+<div [formGroup]="evaluationFormGroup">
+    <h1 mat-dialog-title>Laissez votre évaluation</h1>
+<div mat-dialog-content fxLayout="column" fxLayoutAlign="start stretch">
+    <mat-form-field appearance="outline">
+        <mat-label>Votre email</mat-label>
+        <input matInput placeholder="Entrez votre email" required [formControl]="userEmailControl">
+    </mat-form-field>
+    <div fxFlayout="row" class="stars">
+        <button [ngClass]="{ starColor: getStarColor(1) }" mat-icon-button aria-label="niconet vitres evaluation" (click)="startSelected(1)">
+            <mat-icon>star</mat-icon>
+        </button>
+        <button [ngClass]="{ starColor: getStarColor(2) }" mat-icon-button aria-label="niconet vitres evaluation" (click)="startSelected(2)">
+            <mat-icon>star</mat-icon>
+        </button>
+        <button [ngClass]="{ starColor: getStarColor(3) }" mat-icon-button aria-label="niconet vitres evaluation" (click)="startSelected(3)">
+            <mat-icon>star</mat-icon>
+        </button>
+        <button [ngClass]="{ starColor: getStarColor(4) }" mat-icon-button aria-label="niconet vitres evaluation" (click)="startSelected(4)">
+            <mat-icon>star</mat-icon>
+        </button>
+        <button [ngClass]="{ starColor: getStarColor(5) }" mat-icon-button aria-label="niconet vitres evaluation" (click)="startSelected(5)">
+            <mat-icon>star</mat-icon>
+        </button>
+        <input fxFlex="5" class="invisible" matInput [formControl]="starsControl">
+
+    </div>
+    <mat-form-field appearance="outline">
+        <mat-label>Entrez votre texte ici</mat-label>
+        <textarea matInput [formControl]="textEvalControl" rows="4" required></textarea>
+    </mat-form-field>
+
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Annuler</button>
+    <button mat-button [mat-dialog-close]="{feedDate: feedDate, stars: starsControl.value, texte: textEvalControl.value, user: userEmailControl.value}" color="primary" [disabled]="!isFormValid()">Valider</button>
+</div>
+</div>

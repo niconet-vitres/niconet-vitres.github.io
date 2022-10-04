@@ -9,7 +9,7 @@ import {MailsService} from '../../services/mails.service';
 })
 export class ContactComponent implements OnInit {
   myForm: FormGroup;
-  userEmail: FormControl = new FormControl('', Validators.required);
+  userEmail: FormControl = new FormControl('',[Validators.required, Validators.email]);
   userTexte: FormControl = new FormControl('', Validators.required);
   messageFeedback: string = '';
 
@@ -25,7 +25,6 @@ export class ContactComponent implements OnInit {
   send(): void {
     this.sendMailService.sendMails(this.userEmail.getRawValue(), this.userTexte.getRawValue()).subscribe({
       next: feedback => {
-        console.log("feedback: ", feedback);
         if(feedback.ok) {
           this.myForm.reset();
           this.userTexte.reset();
