@@ -1,33 +1,11 @@
 <header>
 <mat-toolbar color="primary">
   <div>
- <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Laveur de vitres menu">
-    <mat-icon>reorder</mat-icon>
-  </button>
-   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>shopping_cart</mat-icon>
-      <span>MES SERVICES</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>build</mat-icon>
-      <span>MON TRAVAIL</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>question_answer</mat-icon>
-      <span>ME CONTACTER</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>accessibility</mat-icon>
-      <span>QUI SUIS-JE?</span>
-    </button>
-  </mat-menu>  -->
-
   <span class="title">NICONET VITRES</span>
   </div>
   <span class="spacer"></span>
   <div>
-    <button mat-flat-button color="warning">Laissez une évaluation</button>
+    <button mat-flat-button color="warning" (click)="openDialog('1000ms', '500ms')">Laissez une évaluation</button>
   </div>
 
 </mat-toolbar>

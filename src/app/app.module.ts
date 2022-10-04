@@ -22,6 +22,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {HttpClientModule} from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
+import { FeedbackDialogComponent } from './components/feedback-dialog/feedback-dialog.component';
+import { environment } from '../environments/environment';
+import {AngularFireModule} from '@angular/fire/compat';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +38,8 @@ import {HttpClientModule} from '@angular/common/http';
     MyWorkComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    FeedbackDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +54,9 @@ import {HttpClientModule} from '@angular/common/http';
     MatIconModule,
     MatInputModule,
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
