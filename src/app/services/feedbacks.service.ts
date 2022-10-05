@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {AngularFirestore, DocumentReference} from '@angular/fire/compat/firestore';
+import {AngularFirestore, DocumentChangeAction, DocumentReference} from '@angular/fire/compat/firestore';
 import {IFeedback} from '../models/feedbacks.model';
 import {Observable} from 'rxjs';
 
