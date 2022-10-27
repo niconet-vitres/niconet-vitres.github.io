@@ -109,5 +109,8 @@
       }
     }
   },
-  "defaultProject": "niconet"
+  "defaultProject": "niconet",
+  "cli": {
+    "analytics": false
+  }
 }
