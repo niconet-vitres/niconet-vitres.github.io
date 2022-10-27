@@ -11,7 +11,7 @@ jobs:
        - uses: actions/checkout@v3
        - run: yarn install
        - run: yarn build:prod
-       - uses: crazy-max/ghaction-github-pages@v3.0.0
+       - uses: crazy-max/ghaction-github-pages@v3.1.0
          with:
            target_branch: gh-pages
            build_dir: docs
